@@ -1,6 +1,6 @@
 module.exports = tasks => {
   const completedTasks = tasks.filter(e =>
-    ["closed", "accepted"].includes(e.status.status)
+    ["Closed", "accepted"].includes(e.status.status)
   );
   const inprogressTasks = tasks.filter(e =>
     ["in progress", "completed", "in review"].includes(e.status.status)
