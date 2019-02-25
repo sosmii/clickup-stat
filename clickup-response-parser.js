@@ -1,4 +1,9 @@
 module.exports = tasks => {
+  // 自分がレビュアーのタスクを除外する
+  tasks = tasks.filter(e => {
+    return String(e.assignees[0].id) === process.env.MY_USER_ID}
+  );
+
   const completedTasks = tasks.filter(e =>
     ["Closed", "accepted"].includes(e.status.status)
   );
