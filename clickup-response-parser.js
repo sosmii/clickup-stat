@@ -8,7 +8,7 @@ module.exports = tasks => {
     ["Closed", "accepted"].includes(e.status.status)
   );
   const inprogressTasks = tasks.filter(e =>
-    ["in progress", "completed", "in review"].includes(e.status.status)
+    ["in progress", "completed", "in review", "rejected"].includes(e.status.status)
   );
   const notStartedTasks = tasks.filter(e =>
     ["open", "pending"].includes(e.status.status)
