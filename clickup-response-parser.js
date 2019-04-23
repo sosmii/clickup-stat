@@ -49,7 +49,7 @@ function _convertToDesiredFormat(
   notStartedPoints
 ) {
   return (
-    `- 今スプリント(火-月)タスク消化状況\n` +
+    `- 今スプリント(木-水)タスク消化状況\n` +
     `    - トータル: ${totalPoints}pt\n` +
     `    - 完了: ${completedPoints}pt\n` +
     `    - 進行中: ${inprogressPoints}pt\n` +
